@@ -98,11 +98,12 @@ export class dashboardComponent implements OnInit {
   }
 
   deleteUser(user: adminModel){
-    
+    console.log(user);
     this.adminService.deleteUser(user._id).subscribe(data=>{
-      console.log(data);
-      this.getAllUsers();
+    this.getAllUsers();
+      
     });
+
   }
 
   updateUser(user: adminModel){

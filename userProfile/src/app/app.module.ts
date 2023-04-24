@@ -6,15 +6,15 @@ import { DropdownModule } from 'primeng/dropdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashbordComponent } from './componets/admin/dashbord/dashbord.component';
+import { dashboardComponent } from './componets/admin/dashbord/dashbord.component';
 import { LoginComponent } from './componets/auth/login/login.component';
 import { UesrProfileComponent } from './componets/user/uesr-profile/uesr-profile.component';
-
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
-    
     AppComponent,
-    DashbordComponent,
+    dashboardComponent,
     LoginComponent,
     UesrProfileComponent,
   ],
@@ -23,7 +23,9 @@ import { UesrProfileComponent } from './componets/user/uesr-profile/uesr-profile
     AppRoutingModule,
     TableModule,
     MultiSelectModule,
-    DropdownModule
+    DropdownModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

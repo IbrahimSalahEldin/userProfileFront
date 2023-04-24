@@ -5,5 +5,5 @@ export class adminModel {
     password!: Number;
     phoneNumber!: String;
     link!: String;
-
+    
 }
