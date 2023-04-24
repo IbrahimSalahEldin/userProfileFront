@@ -1,1 +1,190 @@
-<p>dashbord works!</p>
+<!-- 
+<div class="card">
+    <p-table
+        #dt
+        [value]="customers"
+        
+        dataKey="id"
+        [rowHover]="true"
+        [rows]="10"
+        [showCurrentPageReport]="true"
+        [rowsPerPageOptions]="[10, 25, 50]"
+        [loading]="loading"
+        [paginator]="true"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        [filterDelay]="0"
+        [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']"
+    >
+        <ng-template pTemplate="caption">
+            <div class="table-header">
+                List of Customers
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i> -->
+                    <!-- <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" /> -->
+                <!-- </span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width: 4rem">
+                    <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                </th>
+                <th pSortableColumn="name" style="min-width: 14rem">
+                    <div class="flex justify-content-between align-items-center">
+                        Name -->
+                        <!-- <p-sortIcon field="name"></p-sortIcon>
+                        <p-columnFilter type="text" field="name" display="menu" class="ml-auto"></p-columnFilter> -->
+                    <!-- </div>
+                </th>
+                <th pSortableColumn="country.name" style="min-width: 14rem">
+                    <div class="flex justify-content-between align-items-center">
+                        Photo -->
+                        <!-- <p-sortIcon field="country.name"></p-sortIcon>
+                        <p-columnFilter type="text" field="country.name" display="menu" class="ml-auto"></p-columnFilter> -->
+                    <!-- </div>
+                </th>
+                <th pSortableColumn="representative.name" style="min-width: 14rem">
+                    <div class="flex justify-content-between align-items-center">
+                        Phone Number -->
+                        <!-- <p-sortIcon field="representative.name"></p-sortIcon>
+                        <p-columnFilter field="representative" matchMode="in" display="menu" [showMatchModes]="false" [showOperator]="false" [showAddButton]="false" class="ml-auto">
+                            <ng-template pTemplate="header">
+                                <div class="px-3 pt-3 pb-0">
+                                    <span class="font-bold">Agent Picker</span>
+                                </div>
+                            </ng-template>
+                            <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                <p-multiSelect  [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
+                                    <ng-template let-option pTemplate="item">
+                                        <div class="inline-block vertical-align-middle">
+                                            <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                            <span class="ml-1 mt-1">{{ option.name }}</span>
+                                        </div>
+                                    </ng-template>
+                                </p-multiSelect>
+                            </ng-template>
+                        </p-columnFilter> -->
+                    <!-- </div>
+                </th>
+                <th pSortableColumn="email" style="min-width: 10rem">
+                    <div class="flex justify-content-between align-items-center">
+                        Email
+                        <p-sortIcon field="email"></p-sortIcon>
+                        <p-columnFilter type="email" field="email" display="menu" class="ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+                <th pSortableColumn="link" style="min-width: 10rem">
+                    <div class="flex justify-content-between align-items-center">
+                        Link
+                        <p-sortIcon field="link"></p-sortIcon>
+                        <p-columnFilter type="numeric" field="link" display="menu" currency="USD" class="ml-auto"></p-columnFilter>
+                    </div>
+                </th>
+                
+                <th style="width: 5rem"></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-customer>
+            <tr class="p-selectable-row">
+                <td>
+                    <p-tableCheckbox [value]="customer"></p-tableCheckbox>
+                </td>
+                <td>
+                    <span class="p-column-title">Name</span>
+                    {{ customer.name }}
+                </td>
+                <td>
+                    <span class="p-column-title">Photo</span>
+                     <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" /> -->
+                    <!-- <span class="ml-1 vertical-align-middle">{{ customer.image }}</span>
+                </td>
+                <td>
+                    <span class="p-column-title">Representative</span>
+                    <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
+                    <span class="ml-1 vertical-align-middle">{{ customer.representative.name }}</span>
+                </td>
+                <td>
+                    <span class="p-column-title">Date</span>
+                    {{ customer.date | date: 'MM/dd/yyyy' }}
+                </td>
+                <td>
+                    <span class="p-column-title">Balance</span>
+                    {{ customer.balance | currency: 'USD':'symbol' }}
+                </td>
+                <td>
+                    <span class="p-column-title">Status</span> -->
+                    <!-- <p-tag [value]="customer.status" [severity]="getSeverity(customer.status)"></p-tag> -->
+                <!-- </td>
+                <td>
+                    <span class="p-column-title">Activity</span> -->
+                    <!-- <p-progressBar [value]="customer.activity" [showValue]="false"></p-progressBar> -->
+                <!-- </td>
+                <td style="text-align: center">
+                    <button pButton type="button" class="p-button-secondary" icon="pi pi-cog"></button>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="8">No customers found.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div> --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container col-md-12"> 
+    <div>
+        <button (click)="addProduct()" class="btn btn-info">Add Product</button>
+      </div> 
+  <h2>All Products</h2>  
+  <div class="table-responsive table-container">  
+    <table class="table table-dark table-hover table-striped">  
+      <thead class="thead-light">  
+        <tr>  
+          <th>Title</th>  
+          <th>Description</th> 
+          <th>Price($)</th> 
+          <th>Company</th>
+          <th>Action</th> 
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let product of products"> 
+           
+          <td>{{product.title}}</td>  
+          <td>{{product.description}}</td>
+          <td>{{product.price | currency : "USD" : true}}</td> 
+          <td>{{product.company}}</td> 
+           
+          <td>  
+            <button (click)="deleteProduct(product)" class="btn btn-info"> Delete</button>  
+            <button (click)="updateProduct(product)" style="margin-left: 20px;" class="btn btn-info"> Edit</button>  
+          </td>  
+        </tr>  
+    </tbody>  
+</table>  
+</div> 
+
+</div> 
+
